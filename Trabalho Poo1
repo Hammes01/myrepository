@@ -1,0 +1,45 @@
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner matriz = new Scanner(System.in);
+
+        System.out.println("Digite sua Matriz de 4 números de 0 a 9:");
+        int num1 = matriz.nextInt();
+        int num2 = matriz.nextInt();
+        int num3 = matriz.nextInt();
+        int num4 = matriz.nextInt();
+
+        System.out.println("Matriz original");
+        System.out.println("" + num1 + " " + num2 + "");
+        System.out.println("" + num3 + " " + num4 + "");
+
+        System.out.println("Selecione um angulo que seja entre 0, 90, 180, 270 ou 360");
+        int rotacao = matriz.nextInt();
+
+        if (rotacao == 0) {
+            System.out.println("" + num1 + " " + num2 + "");
+            System.out.println("" + num3 + " " + num4 + "");
+        } else
+
+        if (rotacao == 90) {
+            System.out.println("" + num3 + " " + num1 + "");
+            System.out.println("" + num4 + " " + num2 + "");
+        } else
+
+        if (rotacao == 180) {
+            System.out.println("" + num4 + " " + num3 + "");
+            System.out.println("" + num2 + " " + num1 + "");
+        } else if (rotacao == 270) {
+            System.out.println("" + num2 + " " + num4 + "");
+            System.out.println("" + num1 + " " + num3 + "");
+        } else if (rotacao == 360) {
+            System.out.println("" + num1 + " " + num2 + "");
+            System.out.println("" + num3 + " " + num4 + "");
+        } else if (rotacao != +0 + +90 + +180 + +270 + +360) {
+           
+        }
+    }
+}
